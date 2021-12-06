@@ -16,7 +16,7 @@ export default function Post() {
                     <img src="assets/img/send.png" alt="" class="icon" />
                     <img src="assets/img/save.png" alt="" class="icon save" />
                 </div>
-                <p class="likes">8,785 cutidas</p>
+                <p class="likes">8,785 cutidasbla</p>
             </div>
         </div>
     );
