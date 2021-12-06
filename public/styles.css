@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 5px 0;
+    z-index: 2;
 }
 
 .nav-wrapper {
@@ -52,7 +53,7 @@ body {
 }
 
 .brand-camera {
-    height: 22px;
+    font-size: 25px;
     margin-top: 5px;
 }
 
@@ -115,6 +116,7 @@ body {
     align-items: center;
     overflow: hidden;
     overflow-x: auto;
+    position: relative;
 }
 
 .status-wrapper::-webkit-scrollbar {
@@ -131,6 +133,24 @@ body {
     margin-right: 15px;
 }
 
+.scroll-bottom {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+}
+
+.scroll-bottom {
+    padding-right: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0.25));
+}
+
+
 .profile-pic {
     width: 70px;
     height: 70px;
@@ -139,6 +159,7 @@ body {
     padding: 3px;
     background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
 }
+
 
 .profile-pic img {
     width: 100%;
@@ -242,6 +263,7 @@ body {
 
 .reaction-wrapper .icon {
     height: 25px;
+    font-size: 32px;
     margin: 0;
     margin-right: 20px;
 }
@@ -257,11 +279,16 @@ body {
     display: flex;
 }
 
+.nav-itens .icon {
+    font-size: 32px;
+}
+
 .icon {
     height: 100%;
     cursor: pointer;
     margin: 0 10px;
     display: inline-block;
+    font-size: 32px;
 }
 
 .info {
@@ -306,13 +333,18 @@ body {
     padding: 20px;
 }
 
-.profile-card {
-    width: fit-content;
+.profile-card, .menu-left {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
+
+.menu-left {
+    width: fit-content;
+}
+
+
 
 .profile-card .profile-pic {
     flex: 0 0 auto;
@@ -350,13 +382,29 @@ body {
     opacity: 1;
     font-weight: 700;
     font-size: 12px;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .suggestion-text {
+    display: flex;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 700;
     margin: 20px 0;
+    justify-content: space-between;
+}
+
+.suggestion-text p {
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-right: 20px;
+    color: #262626;
+
+
 }
 
 .navbar-bottom {

@@ -4,18 +4,18 @@ export default function Navbar() {
             <nav class="nav-wrapper">
                 <div class="logos">
                     <div class="camera-logo">
-                        <img src="assets/img/camera.png" alt="brand-camera" class="brand-camera" />
+                        <ion-icon class="brand-camera" name="logo-instagram"></ion-icon>
                         <div class="vertical-bar"></div>
                     </div>
                     <img src="assets/img/logo.png" class="brand-img" alt="logo-img" />
                 </div>
                 <input type="text" class="search-box" placeholder="pesquisar" />
                 <div class="nav-itens">
-                    <img src="assets/img/messenger.png" class="icon" alt="" />
+                    <ion-icon class="icon" name="paper-plane-outline"></ion-icon>
                     <div class="sub-icons">
-                        <img src="assets/img/bussola.png" class="icon" alt="" />
-                        <img src="assets/img/like.png" class="icon" alt="" />
-                        <img src="assets/img/person.png" class="icon" alt="" />
+                        <ion-icon class="icon" name="compass-outline"></ion-icon>
+                        <ion-icon class="icon" name="heart-outline"></ion-icon>
+                        <ion-icon class="icon" name="person-outline"></ion-icon>
                     </div>
                 </div>
             </nav>
